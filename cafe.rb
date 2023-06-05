@@ -16,7 +16,7 @@ FOODS = [
 
 def take_order(menus)
   menus.each.with_index(0) do |menu, i|
-    puts "(#{i+1})#{menu[:name]}: #{menu[:price]}円"
+    puts "(#{i + 1})#{menu[:name]}: #{menu[:price]}円"
   end
   print '>'
   order_number = gets.to_i - 1
